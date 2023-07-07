@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 400px 200px;
+  /* Setting the default to make more columns */
+  grid-auto-flow: column;
+  /* Setting the implicit columns created to 50px */
+  grid-auto-columns: 50px;
+}
