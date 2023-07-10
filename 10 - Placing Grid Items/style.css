@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.poop {
+  background-color: #bada55;
+  /* grid-column-start: 2;
+  grid-column-end: 5; */
+  /* grid-column: start / stop */
+  /* grid-column: 2 / 5; */
+  /* start at the start and end at the end */
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 2;
+}
