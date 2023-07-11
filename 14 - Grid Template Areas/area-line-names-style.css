@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "🍕 🍕 🍕 🍕 🛼 🛼 🛼 🛼"
+    "🍕 🍕 🍕 🍕 🛼 🛼 🛼 🛼"
+    "🍕 🍕 🍕 🍕 🛼 🛼 🛼 🛼"
+    "🍕 🍕 🍕 🍕 🛼 🛼 🛼 🛼";
+}
+
+.item3 {
+  /* grid-area: 🍕; */
+  /* defines the column for item 3: start at pizza and end at rollerskate */
+  grid-column: 🍕-start / 🛼-end;
+  /* places the row at the bottom of our pizza area */
+  grid-row-end: 🍕-end;
+}
