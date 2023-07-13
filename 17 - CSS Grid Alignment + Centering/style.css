@@ -1,0 +1,39 @@
+/*
+
+      justify-items:      
+      align-items:
+      Note: These value apply to all grid items inside the container.
+
+      justify-content:
+      align-content:
+      Note: This refers to the size of the grid (the grid within the container)
+
+      align-self:
+      justify-self:
+      Note: Property on the actual item itself
+
+      justify-* is row axis
+      align-* is column axis
+    */
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  height: 500px;
+  border: 10px solid var(--yellow);
+  grid-template-columns: repeat(5, 100px);
+  /* justify-items: center;
+  align-items: center; */
+  /* OR: NEW SYNTAX ... */
+  place-items: stretch stretch;
+  justify-content: space-between;
+  align-content: center;
+}
+.itm {
+  background-color: #bada55;
+}
+
+.itm5 {
+  justify-self: center;
+  align-self: center;
+}
